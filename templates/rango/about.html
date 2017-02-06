@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-
-{% load staticfiles %} <!-- New line -->
-
-<html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+	About
+{% endblock %}
 	
-	<head>
-		<title>About</title>
-	</head>
-	<body>
-		<div>
-			Rango says this is the about page <br/>
-			This page has been created by aeroniero <br/>
-			<a href='/rango/'>Index</a><br />
-			<img src="/static/images/cat.jpg"
-				alt='Picture of Cat' height = "400" width = "700" /> <!-- New line -->
-			<img src="/media/dog.jpg"
-				alt='Picture of Dog' /> <!-- New line -->
-		</div>
-	</body>
-</html>
+{% block body_block %}
+
+<h1> This tutorial has been put together by Angelos Perivolaropoulos</h1>
+<div>
+	<br/> 
+	<img src="/media/dog.jpg"
+		alt='Picture of dog' /> 
+	<img src="/static/images/cat.jpg"
+		alt="Picture of a cat" height=500 width=600 /> 
+
+</div>
+		
+{% endblock %}

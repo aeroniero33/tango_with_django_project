@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Rango
+{% endblock %}
+
+{% block body_block %}
 	<head>
 		<title>Rango</title>
 	</head>
@@ -21,4 +28,4 @@
 			</form>
 		</div>
 	</body>
-</html>
+{% endblock %}
